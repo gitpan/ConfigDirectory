@@ -1,0 +1,37 @@
+ConfigDirectory-Read and ConfigDirectory-Local
+
+ConfigDirectory::Read provides an interface to easily reading
+qmail-style control directories of arbitrary depth.  It includes
+functions for accessing data stored in flat files, as well as listing
+available "configuration keys".  See the perldoc for more information.
+
+ConfigDirectory::Local provides an interface for recursively
+determining configuration.  This means that if a request to read
+/path/to/file is generated, and /path/to/file doesn't exist,
+/path/file and /file are checked for.  Details are easily controllable
+(so that the search doesn't ascend too high, for example).  As always,
+RTF perldoc or e-mail me.  Thanks!
+
+MAN PAGES
+
+perldoc ConfigDirectory::Read
+perldoc ConfigDirectory::Local
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+    perl Makefile.PL
+    make
+    make test
+    make install
+
+If there are problems with make test, please let me know.  Thanks in
+advance for your help.
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2005 Jonathan T. Rockway
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.

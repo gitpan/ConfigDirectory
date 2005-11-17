@@ -1,0 +1,13 @@
+Changes
+MANIFEST
+META.yml # Will be created by "make dist"
+Makefile.PL
+README
+lib/ConfigDirectory/Read.pm
+lib/ConfigDirectory/Internal.pm
+lib/ConfigDirectory/Local.pm
+t/00-load.t
+t/01-readkey.t
+t/02-readlocalkey.t
+t/pod-coverage.t
+t/pod.t
